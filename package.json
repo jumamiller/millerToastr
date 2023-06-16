@@ -1,8 +1,8 @@
 {
-    "name": "cxlt-vue2-toastr",
-    "version": "1.1.0",
+    "name": "@jumamiller/vue2-toastr",
+    "version": "1.0.0",
     "description": "vue2 toastr component",
-    "author": "Bob Tian <chengxulvtu@126.com>",
+    "author": "Miller Juma (jumamiller@yahoo.com)",
     "private": false,
     "main": "./dist/js/cxlt-vue2-toastr.js",
     "scripts": {
