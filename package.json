@@ -1,6 +1,6 @@
 {
     "name": "@jumamiller/vue2-toastr",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "vue2 toastr component",
     "author": "Miller Juma (jumamiller@yahoo.com)",
     "private": false,

@@ -1,30 +1,23 @@
-# cxlt-vue2-toastr ([English Doc](/README.en.md))
+# @jumamiller/vue2-toastr([English Doc](/README.en.md))
 
 
-**cxlt-vue2-toastr**是弹出提示的Vue2组件，基于[toastr](https://github.com/CodeSeven/toastr)的样式和[animate.css](https://github.com/daneden/animate.css)的动画效果。
+**@jumamiller/vue2-toastr(https://github.com/)**
 
-**Demo:** [https://chengxulvtu.github.io/toastr/index.html](https://chengxulvtu.github.io/toastr/index.html)
-
-
-## 安装
-
-使用npm
+npm
 ```bash
-npm install cxlt-vue2-toastr --save
+npm install @jumamiller/vue2-toastr --save
 ```
-或者yarn
+yarn
 ```bash
-yarn add cxlt-vue2-toastr
+yarn add @jumamiller/vue2-toastr
 ```
 
-## 用法
-### 注册组件
 ```javascript
-import CxltToastr from 'cxlt-vue2-toastr'
+import CxltToastr from '@jumamiller/vue2-toastr'
 
 Vue.use(CxltToastr)
 ```
-还可以传入一个全局配置对象
+
 ```javascript
 var toastrConfigs = {
     position: 'top right',
@@ -32,26 +25,22 @@ var toastrConfigs = {
 }
 Vue.use(CxltToastr, toastrConfigs)
 ```
-下文表格中列举的属性除了color都可在全局配置中使用
 
-另外还可以配置下面四个属性
 
-| 属性           | 类型            | 描述                        |
-| ------------- |:--------------: | --------------------------:|
-| successColor         | String          | success的背景色       |
-| infoColor            | String          | info的背景色       |
-| warningColor         | String          | warning的背景色       |
-| errorColor           | String          | error的背景色       |
+|          |            |             |
+| --------- |:----------:|------------:|
+| successColor     |   String   |     success |
+| infoColor        |   String   |        info |
+| warningColor     |   String   |     warning |
+| errorColor       |   String   |       error |
 
-需要注意的是，实例的color属性会覆盖全局配置中的color。
 
-### 引入样式
 ```javascript
-import 'cxlt-vue2-toastr/dist/css/cxlt-vue2-toastr.css'
+import 'cxlt-vue2-toastr/dist/css/@jumamiller/vue2-toastr.css'
 ```
-或在.vue文件中使用style
+style
 ```javascript
-<style src="cxlt-vue2-toastr/dist/css/cxlt-vue2-toastr.css"></style>
+<style src="cxlt-vue2-toastr/dist/css/@jumamiller/vue2-toastr.css"></style>
 ```
 ### 使用组件
 ```javascript
@@ -60,38 +49,18 @@ this.$toast.success({
     message:''
 })
 
-this.$toast.success('传递字符串作为通知的内容')
+this.$toast.success('message')
 ```
 
-cxlt-vue2-toastr支持以下方法
+@jumamiller/vue2-toastr
 
-| 方法名         |
-| ------------- |
-| success       |
-| info          |
-| warn          |
-| error         |
-| removeAll     |
-
-
-当向方法传递对象时，可以使用下列属性来控制toastr显示的标题、内容、位置等：
-
-| 属性           | 类型            | 描述                        |
-| ------------- |:--------------: | --------------------------:|
-| title         | String          | 通知的标题                   |
-| message       | String          | 通知的内容                   |
-| closeButton   | Boolean         | 是否显示关闭按钮，默认false    |
-| progressBar   | Boolean         | 默认false    |
-| type          | String          | 通知的类型，默认success       |
-| position      | String          | 通知显示的位置，默认top right  |
-| icon          | String          | 自定义图标                   |
-| showMethod    | String          | 显示动画的名称，默认fadeIn     |
-| hideMethod    | String          | 隐藏动画的名称，默认fadeOut    |
-| showDuration  | Number          | 显示动画持续的时间，单位ms，默认1000      |
-| hideDuration  | Number          | 隐藏动画持续的时间，单位ms，默认1000     |
-| delay         | Number          | 显示动画开始之前的延迟，单位ms，默认0，没有延迟 |
-| timeOut       | Number          | toast显示的时间，单位ms，默认1500 |
-| color         | String          | toast的背景色                       |
+| types     |
+|-----------|
+| success   |
+| info      |
+| warn      |
+| error     |
+| removeAll |
 
 ### type
 
@@ -112,8 +81,6 @@ cxlt-vue2-toastr支持以下方法
 * `bottom full width`
 
 ### icon
-
-自定义图标可以是任何有效的图片路径
 
 ### showMethod
   * `bounce`
@@ -205,32 +172,12 @@ cxlt-vue2-toastr支持以下方法
   * `slideOutRight`
   * `slideOutUp`
 
-## Demo
-[https://chengxulvtu.github.io/toastr/index.html](https://chengxulvtu.github.io/toastr/index.html)
-
-![Demo截图](http://cxlt.oss-cn-shanghai.aliyuncs.com/cxlt-vue2-toastr%20demo.png)
-
-## 运行程序
-先fork项目，然后执行下面的命令
 ```bash
 git clone xxx
-cd cxlt-vue2-toastr
+cd @jumamiller/vue2-toastr
 yarn
 npm run dev
 ```
 
-## 更新历史
 
-2017-11-09  添加自定义图标功能
-
-## 欢迎我的关注公众号
-
-<img src="https://image.chengxulvtu.com/2014/07/qrcode_for_gh_71d38a91773e_258.jpg" title="程序旅途公众号二维码" width="150"/>
-
-## 捐助
-
-BTC: 31wAperpMdHeiy4G8ygoREFDM8hyodabfr
-
-ETH: 0x5d127646887be9adb74efa1e472fa47ce50a50cb
-
-EOS: bobtian31223
+PayPal : jumamiller
